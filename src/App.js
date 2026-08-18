@@ -757,7 +757,7 @@ function App() {
     console.log("POS Order ID:", currentOrderId);
     // Pass the real POS orderId as posOrderId so we can use it on success
     // (YeahPay generates its own orderId which does NOT match our DB OrderNumber)
-    const demoUrl = `https://yeahpay-demo-production.up.railway.app?amount=${totalAmount}&orderId=${currentOrderId}&posOrderId=${encodeURIComponent(currentOrderId)}&from=pos`;
+    const demoUrl = `https://yeahpay-demo-production-9437.up.railway.app?amount=${totalAmount}&orderId=${currentOrderId}&posOrderId=${encodeURIComponent(currentOrderId)}&from=pos`;
 
     const paymentWindow = window.open(demoUrl, '_blank', 'width=500,height=700');
 
